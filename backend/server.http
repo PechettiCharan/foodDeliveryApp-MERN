@@ -1,0 +1,30 @@
+POST http://localhost:4000/api/food/add
+Content-Type: multipart/form-data; boundary=----FormBoundary12345
+
+------FormBoundary12345
+Content-Disposition: form-data; name="name"
+
+Burger
+------FormBoundary12345
+Content-Disposition: form-data; name="description"
+
+Tasty chicken burger
+------FormBoundary12345
+Content-Disposition: form-data; name="price"
+
+199
+------FormBoundary12345
+Content-Disposition: form-data; name="category"
+
+Fast Food
+------FormBoundary12345
+Content-Disposition: form-data; name="image"; filename="burger.jpg"
+Content-Type: image/jpeg
+
+< ./burger.jpg
+------FormBoundary12345--
+
+###
+POST http://localhost:4000/api/cart/get
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDZlOTU1MWQ2MTQ4Yzg3MWUzNjA4ZSIsImlhdCI6MTc2NjM5MDA3Mn0.rA7-mGHzxyEi7hbaMuM0P3aBwbg7ezThfEw2IrTb5oQ"
+Content-Type: application/json
