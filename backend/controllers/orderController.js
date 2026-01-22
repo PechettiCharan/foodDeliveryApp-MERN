@@ -3,7 +3,7 @@ import userModel from "../models/userModel.js";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const url = "http://localhost:5173";
+const url = "https://fooddeliveryapp-mernproject.onrender.com";
 
 const placeOrder = async (req, res) => {
   try {
